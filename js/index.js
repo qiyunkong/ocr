@@ -17,7 +17,11 @@
         var video = $("#demo");
         video.style="display: block;";
         navigator.mediaDevices.getUserMedia({
-            video:true
+            //video:true,
+            video: { 
+                facingMode: { 
+                    exact: "environment" 
+            } }
         }).then(res=>{
             video.srcObject = res;
             video.play();
