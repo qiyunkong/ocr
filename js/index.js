@@ -17,6 +17,7 @@
         var video = $("#demo");
         video.style="display: block;";
         navigator.mediaDevices.getUserMedia({
+            audio: true,
             //video:true,
             video: { 
                 facingMode: { 
