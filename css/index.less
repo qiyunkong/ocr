@@ -12,7 +12,7 @@ body{
         height: 100vh;
         overflow: hidden;
         background-color: #00a8ff;
-        div.camera{
+        div.btn-camera{
             position: absolute;
             left: 0;
             top: 0;
@@ -32,7 +32,7 @@ body{
            }
             
         }
-        div.record{
+        div.btn-record{
             position: absolute;
             bottom: 50px;
             width: 100vw;
@@ -41,6 +41,84 @@ body{
             text-align: center;
             color: #777;
             background-color: #fff;
+        }
+        div.CameraModule{
+            display: none;
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            z-index: 999;
+            // background-color: red;
+            .video-camera{
+                position: absolute;
+                height: 100vh;
+            }
+            .btn-ok{
+                position: absolute;
+                width: 80px;
+                height: 80px;
+                left: 0;
+                right: 0;
+                bottom: 10%;
+                margin:  0 auto;
+                background-color: #fff;
+                border: none;
+                border-radius: 50%;
+            }
+
+            .btn-cancel{
+                position: absolute;
+                width: 80px;
+                height: 80px;
+                left: 0;
+                right: 0;
+                bottom: 10%;
+                margin:auto;
+                margin-left:50px;
+                background-color: #fff;
+                border: none;
+            }
+
+        }
+        div.PicModule{
+            display: none;
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            z-index: 999;
+            background-color: #333;
+            .img-pic{
+                position: absolute;
+                height: 100vh;
+            }
+            .img-ok{
+                position: absolute;
+                width: 80px;
+                height: 80px;
+                left: 0;
+                right: 0;
+                bottom: 10%;
+                margin:  0 auto;
+                background-color: #fff;
+                border: none;
+                border-radius: 50%;
+                margin-right:50px;
+            }
+
+            .img-cancel{
+                position: absolute;
+                width: 80px;
+                height: 80px;
+                left: 0;
+                right: 0;
+                bottom: 10%;
+                margin:auto;
+                margin-left:50px;
+                border-radius: 50%;
+                background-color: #fff;
+                border: none;
+            }
+
         }
         .cameravideo{
             position: absolute;

@@ -10,7 +10,7 @@ body {
   overflow: hidden;
   background-color: #00a8ff;
 }
-.APP-header .first div.camera {
+.APP-header .first div.btn-camera {
   position: absolute;
   left: 0;
   top: 0;
@@ -26,10 +26,10 @@ body {
   border-radius: 50%;
   border: 3px solid #fff;
 }
-.APP-header .first div.camera .icon-xiangji {
+.APP-header .first div.btn-camera .icon-xiangji {
   font-size: 65px;
 }
-.APP-header .first div.record {
+.APP-header .first div.btn-record {
   position: absolute;
   bottom: 50px;
   width: 100vw;
@@ -38,6 +38,79 @@ body {
   text-align: center;
   color: #777;
   background-color: #fff;
+}
+.APP-header .first div.CameraModule {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+}
+.APP-header .first div.CameraModule .video-camera {
+  position: absolute;
+  height: 100vh;
+}
+.APP-header .first div.CameraModule .btn-ok {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 0;
+  right: 0;
+  bottom: 10%;
+  margin: 0 auto;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+}
+.APP-header .first div.CameraModule .btn-cancel {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 0;
+  right: 0;
+  bottom: 10%;
+  margin: auto;
+  margin-left: 50px;
+  background-color: #fff;
+  border: none;
+}
+.APP-header .first div.PicModule {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  background-color: #333;
+}
+.APP-header .first div.PicModule .img-pic {
+  position: absolute;
+  height: 100vh;
+}
+.APP-header .first div.PicModule .img-ok {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 0;
+  right: 0;
+  bottom: 10%;
+  margin: 0 auto;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+.APP-header .first div.PicModule .img-cancel {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 0;
+  right: 0;
+  bottom: 10%;
+  margin: auto;
+  margin-left: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: none;
 }
 .APP-header .first .cameravideo {
   position: absolute;

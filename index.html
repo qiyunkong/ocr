@@ -11,14 +11,31 @@
 <body>
     <header class="APP-header">
         <section class="first">
-            <div id="camera" class="camera">
+            <div id="btn-camera" class="btn-camera">
                 <span class="iconfont icon-xiangji"></span>
                 <p>拍照上传</p>
             </div>
-            <div class="record">
+            <div id="btn-record"  class="btn-record">
                 <p>我的记录</p>
             </div>
-            <video src="" class="cameravideo" id="demo"></video>
+            <div id="CameraModule" class="CameraModule">
+               <video src="" class="video-camera" id="video-camera"></video>
+               <button id="btn-ok" class="btn-ok">
+                   <span class="iconfont"></span>
+               </button>
+               <button id="btn-cancel" class="btn-cancel">
+                   <span class="iconfont"></span>
+               </button>
+            </div>
+            <div id="PicModule" class="PicModule">
+                <canvas id="img-pic" class="img-pic"></canvas>
+                <button id="img-ok" class="img-ok">
+                    <span class="iconfont"></span>
+                </button>
+                <button id="img-cancel" class="img-cancel">
+                    <span class="iconfont"></span>
+                </button>
+            </div>
         </section>
         <section style="display: none;">
             <div class="">
