@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="parent">
+        <input type="file" class="file">
+        <div>
+            <img src="" id="img" alt="">
+            <input type="text" name="" id="type">
+            <input type="text" name="" id="no">
+        </div>
+    </div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script>
+        $('.parent').on('change','.file',function(){
+            let reader = new FileReader();
+            reader.readAsDataURL(this.files[0])
+            //上传结束
+            reader.onloadend = e => {
+                console.log(e.target.result);
+                let data = e.target.result;
+                $('#img').attr('src',data);
+                let base64data = data.substring(data.indexOf(',')+1);
+                //console.log(base64data);
+                $.post('http://localhost:3002/getCarNumberinfo',{
+                    img:base64data,
+                },data=>{
+                    //console.log(data);
+                    if(data.success){
+                        let {cls_name,txt} = data.plates[0]
+                        $('#type').val(cls_name);
+                        $('#no').val(txt);
+                    }
+                })
+            }
+        })
+
+    </script>
+</body>
+</html>

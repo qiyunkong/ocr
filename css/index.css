@@ -1,0 +1,66 @@
+body {
+  height: 100vh;
+}
+.APP-header section {
+  color: #fff;
+}
+.APP-header .first {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #00a8ff;
+}
+.APP-header .first div.camera {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: 166px auto;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+.APP-header .first div.camera .icon-xiangji {
+  font-size: 65px;
+}
+.APP-header .first div.record {
+  position: absolute;
+  bottom: 50px;
+  width: 100vw;
+  border-radius: 50% 50% 0 0;
+  line-height: 20vh;
+  text-align: center;
+  color: #777;
+  background-color: #fff;
+}
+.APP-header .first .cameravideo {
+  position: absolute;
+  display: none;
+  height: 100%;
+  z-index: 999;
+}
+.APP-footer {
+  height: 50px;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #fff;
+}
+.APP-footer ul {
+  display: flex;
+  text-align: center;
+}
+.APP-footer ul li {
+  flex: 1;
+}
+.APP-footer ul li.bule {
+  color: #00a8ff;
+}
