@@ -80,11 +80,11 @@ body {
   width: 100vw;
   height: 100vh;
   z-index: 999;
-  background-color: #333;
 }
 .APP-header .first div.PicModule .img-pic {
   position: absolute;
   height: 100vh;
+  width: 100vw;
 }
 .APP-header .first div.PicModule .img-ok {
   position: absolute;

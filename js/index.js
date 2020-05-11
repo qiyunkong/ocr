@@ -97,9 +97,20 @@
 
     //拍照API
     function Photograph(){
-        var cxt = imgPic.getContext("2d"); //获取画笔
+        console.log(1);
+        //btnOk.style = "display: none;";
+        //btnCancel.style = "display: none;";
+        var canvas = document.createElement("canvas");
+        canvas.className = "img-pic";
+        canvas.width = 200;
+        canvas.height = 200;
+        var cxt = canvas.getContext("2d"); //获取画笔
         //图片API
-        cxt.drawImage(videoCamera,0,0);
+        cxt.drawImage(videoCamera,0,0,200,200);
+        PicModule.style = "display: block;";
+        //CameraModule.style = "";
+        PicModule.appendChild(canvas);
+
     }
 
 
